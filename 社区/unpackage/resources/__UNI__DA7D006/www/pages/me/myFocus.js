@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"showTime { margin-right: 0; font-size: ",[0,26],"; }\n",],undefined,{path:"./pages/me/myFocus.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/me/myFocus.wxml') } }));

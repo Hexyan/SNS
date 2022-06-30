@@ -1,0 +1,44 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: youqu-service-provider-invitation
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/youqu?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+  cloud:
+    stream:
+      bindings: # exchange与queue绑定
+        log_output: # 日志生产者设置output
+          destination: log.exchange
+          content-type: application/json
+          group: log.queue
+          binder: rabbit
+      binders:
+       rabbit:
+          type: rabbit
+          environment:
+            springS:
+              rabbitmq:
+                host: 127.0.0.1 #127.0.0.1:5672
+                port: 5672
+                username: guest
+                password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名法
+#  config-location: classpath:mybatis/mapper/mybatis-config.xml
+
+#日志打印
+logging:
+  level:
+    cn.zdxh.invitation.mapper : debug

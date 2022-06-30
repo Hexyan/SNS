@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* 页面左右间距 */
+/* 文字尺寸 */
+/*文字颜色*/
+/* 边框颜色 */
+.top.data-v-19fd1827 {
+  width: 100%;
+  height: 500rpx;
+  background-color: #55557f;
+}
+.back.data-v-19fd1827 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+}
+.focas-fans.data-v-19fd1827 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  float: right;
+  width: 100%;
+  /* height: 100; */
+  margin-left: 300rpx;
+}
+.focas-fans .item-focas.data-v-19fd1827 {
+    color: #FFFFFF;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    margin-left: 30rpx;
+    margin-top: 20rpx;
+    width: 150rpx;
+    height: 64rpx;
+    border: 1rpx solid #55557f;
+    border-radius: 50rpx;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.focas-fans .item-fans.data-v-19fd1827 {
+    color: #FFFFFF;
+    font-size: 30rpx;
+    text-align: center;
+    line-height: 60rpx;
+    margin-left: 40rpx;
+    margin-top: 20rpx;
+    width: 150rpx;
+    height: 64rpx;
+    border: 1rpx solid #55557f;
+    border-radius: 50rpx;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.yzms.data-v-19fd1827 {
+  color: #000000;
+  border: 1rpx solid #000000;
+}
+.personPic.data-v-19fd1827 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0rpx;
+}
+.personPic .item-img.data-v-19fd1827 {
+    margin-top: 100rpx;
+    margin-left: 20rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.personPic .item-other.data-v-19fd1827 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+}
+.personPic .item-other .item-name.data-v-19fd1827 {
+      margin-left: 25rpx;
+      margin-top: 10rpx;
+      font-size: 40rpx;
+      color: #FFFFFF;
+}
+.personPic .item-other .item-sex.data-v-19fd1827 {
+      margin-left: 25rpx;
+      margin-top: 20rpx;
+      width: 40rpx;
+      height: 40rpx;
+}
+.msg.data-v-19fd1827 {
+  margin-left: 25rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+}
+.otherMsg.data-v-19fd1827 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30rpx;
+  font-size: 33rpx;
+  color: #FFFFFF;
+}
+.otherMsg .item.data-v-19fd1827 {
+    margin-left: 25rpx;
+}
+.meHeadAvatar.data-v-19fd1827 {
+  margin-top: 100rpx;
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.meHeadAvatar image.data-v-19fd1827 {
+  width: 110rpx;
+  height: 110rpx;
+  display: block;
+  border-radius: 50%;
+}
+

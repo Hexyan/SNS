@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--父pom-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <!--子模块-->
+    <modules>
+        <module>youqu-service-commons</module>
+        <module>youqu-service-eureka</module>
+        <module>youqu-service-other</module>
+        <module>youqu-service-provider-chat</module>
+        <module>youqu-service-provider-invitation</module>
+        <module>youqu-service-provider-user</module>
+        <module>youqu-service-zuul</module>
+    </modules>
+
+    <groupId>cn.zdxh</groupId>
+    <artifactId>youqu</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <!--具体的版本号-->
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Hoxton.RELEASE</spring-cloud.version>
+        <project.commons.version>0.0.1-SNAPSHOT</project.commons.version>
+        <project.mapper.version>0.0.1-SNAPSHOT</project.mapper.version>
+        <mybatisplus.version>3.0.6</mybatisplus.version>
+        <jwt.version>3.8.0</jwt.version>
+    </properties>
+
+    <!--管理自定义的版本号-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.RELEASE</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>cn.zdxh</groupId>
+                <artifactId>youqu-service-commons</artifactId>
+                <version>${project.commons.version}</version>
+                <type>jar</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>alimaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+
+</project>

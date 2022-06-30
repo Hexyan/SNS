@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="聊天模块" />
+        <module name="帖子模块" />
+        <module name="generator" />
+        <module name="邮件" />
+        <module name="用户模块" />
+        <module name="微服务注册中心" />
+        <module name="网关" />
+        <module name="通用" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="youqu-service-consumer-back" target="1.8" />
+      <module name="youqu-service-consumer-front" target="1.8" />
+      <module name="youqu-service-provider-mq" target="1.8" />
+      <module name="youqu-service-provider-qiniu" target="1.8" />
+      <module name="youqu-service-provider-redis" target="1.8" />
+      <module name="邮件" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="generator" options="-parameters" />
+      <module name="youqu" options="-parameters" />
+      <module name="youqu-service-consumer-back" options="-parameters" />
+      <module name="youqu-service-consumer-front" options="-parameters" />
+      <module name="youqu-service-provider-mq" options="-parameters" />
+      <module name="youqu-service-provider-qiniu" options="-parameters" />
+      <module name="youqu-service-provider-redis" options="-parameters" />
+      <module name="帖子模块" options="-parameters" />
+      <module name="微服务注册中心" options="-parameters" />
+      <module name="用户模块" options="-parameters" />
+      <module name="网关" options="-parameters" />
+      <module name="聊天模块" options="-parameters" />
+      <module name="通用" options="-parameters" />
+      <module name="邮件" options="-parameters" />
+    </option>
+  </component>
+</project>

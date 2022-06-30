@@ -1,0 +1,58 @@
+server:
+  port: 9502
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9000/eureka/
+
+
+#Spring Cloud Stream相关配置
+spring:
+  application:
+    name: youqu-service-provider-user
+  cloud:
+    stream:
+      bindings: # exchange与queue绑定
+        email_output: # 邮件生产者设置output
+          destination: email.exchange # exchange
+          content-type: application/json # 消息传输类型
+          group: email.queue  # queue
+          binder: rabbit
+        log_output: # 日志生产者设置output
+          destination: log.exchange
+          content-type: application/json
+          group: log.queue
+          binder: rabbit #自定义名称
+      binders:
+        rabbit:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: 127.0.0.1 #127.0.0.1:5672
+                port: 5672
+                username: guest
+                password: guest
+#  rabbitmq:
+#     addresses: 127.0.0.1:5672    #127.0.0.1:5672
+#     username: guest
+#     password: 25802580
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/youqu?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+
+
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true # 开启驼峰命名法
+
+#日志打印
+logging:
+  level:
+    cn.zdxh.user.mapper : debug
+    cn.zdxh.user.client.RedisClient : debug
+

@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/component/component",
+    "pages/details/details",
+    "pages/details/videoDetails",
+    "pages/shilu-login/blog",
+    "pages/shilu-login/forget",
+    "pages/shilu-login/login",
+    "pages/shilu-login/reg",
+    "pages/me/me",
+    "pages/netty/chat",
+    "pages/netty/main_chat",
+    "pages/index/publish",
+    "pages/me/personal",
+    "pages/me/info",
+    "pages/me/myInvitation",
+    "pages/me/myComment",
+    "pages/me/myCollect",
+    "pages/me/myFocus",
+    "pages/me/myFans",
+    "pages/me/setting",
+    "pages/me/about"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "新闻模版",
+    "navigationBarBackgroundColor": "#55557f",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#55557f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab-house.png",
+        "selectedIconPath": "static/tab-house-current.png",
+        "text": "好玩"
+      },
+      {
+        "pagePath": "pages/netty/main_chat",
+        "iconPath": "static/tab-chat.png",
+        "selectedIconPath": "static/tab-chat-current.png",
+        "text": "信息"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "static/tab-my.png",
+        "selectedIconPath": "static/tab-my-current.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "好玩社区",
+  "compilerVersion": "2.6.5",
+  "usingComponents": {}
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我的帖子",
+  "navigationBarBackgroundColor": "#55557f",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "mix-pulldown-refresh": "/components/mix-pulldown-refresh/mix-pulldown-refresh",
+    "mix-load-more": "/components/mix-load-more/mix-load-more",
+    "mix-advert": "/components/mix-advert/vue/mix-advert"
+  }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zdxh.user.mapper.TFocusFansMapper">
+
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.zdxh.commons.entity.TFocusFans">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="friend_id" property="friendId" />
+        <result column="type" property="type" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, friend_id, type, create_time
+    </sql>
+
+    <delete id="moveFocus" parameterType="cn.zdxh.commons.entity.TFocusFans">
+        DELETE FROM t_focus_fans
+        WHERE (user_id = #{userId} AND friend_id = #{friendId} AND type = 1) OR (friend_id = #{userId} AND user_id = #{friendId} AND type = 2)
+    </delete>
+
+    <select id="orFocus" parameterType="cn.zdxh.commons.entity.TFocusFans" resultType="cn.zdxh.commons.entity.TFocusFans">
+        SELECT * FROM t_focus_fans tff
+        WHERE tff.user_id = #{userId} AND tff.friend_id = #{friendId} AND tff.type = 1
+    </select>
+
+    <select id="findFocusAndFansByUserId" parameterType="int" resultMap="BaseResultMap">
+        SELECT * FROM t_focus_fans
+        WHERE user_id = #{userId} OR friend_id = #{userId}
+    </select>
+
+</mapper>

@@ -1,0 +1,1 @@
+<view><button class="btn" type="primary" data-event-opts="{{[['tap',[['toLogin']]]]}}" bindtap="__e">切换账号</button></view>
