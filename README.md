@@ -1,9 +1,10 @@
 # 社区论坛
 
-基于SpringCloud和Uniapp开发 前后端分离
+基于SpringCloud和Uniapp开发的一款社区论坛app
 
-| Spring Boot  | 基础应用                   |
+|              |                            |
 | ------------ | -------------------------- |
+| Spring Boot  | 基础应用                   |
 | Spring Cloud | 微服务化                   |
 | Mybatis-Plus | DAO                        |
 | Netty        | 聊天功能                   |
@@ -12,6 +13,10 @@
 | 七牛云       | OSS 图床                   |
 
 - #### 项目结构：
+
+   前后端分离
+
+  ##### 后端
 
   - ***service-commons：*** 公共模块
 
@@ -26,8 +31,16 @@
   - ***service-provider-chat：*** 聊天模块
 
   - ***service-other：*** redis/rabbitmq/七牛云/邮件 SMTP
+  
+  ##### 前端
+  
+  - ***后台管理：*** vue模板
+  - 主程序：uniapp
+  
+  
 
-    ![image-20220702164516076](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/202207021645118.png)
+
+![image-20220702164516076](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/202207021645118.png)
 
 - #### 截图
 
