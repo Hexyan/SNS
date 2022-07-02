@@ -19,7 +19,7 @@
   - ***service-provider-invitation：*** 帖子、评论、话题模块
   - ***service-provider-user：*** 用户模块
   - ***service-provider-chat：*** 聊天模块
-  - ***service-other：*** redis/rabbitmq/七牛云/邮件集成模块 SMTP
+  - ***service-other：*** redis/rabbitmq/七牛云/邮件 SMTP
 
 - #### 
 
@@ -37,4 +37,7 @@
 
 ![image-20220702021727245](https://raw.githubusercontent.com/Hexyan/blobimge/main/img/image-20220702021727245.png)
 
-![image-20220702021949381](https://raw.githubusercontent.com/Hexyan/blobimge/main/img/image-20220702021949381.png)
+
+
+![image-20220702163657935](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/202207021636970.png)
+
