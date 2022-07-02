@@ -14,12 +14,20 @@
 - #### 项目结构：
 
   - ***service-commons：*** 公共模块
+
   - ***service-eureka：*** 服务注册中心模块
+
   - ***service-zuul：*** 网关路由模块
+
   - ***service-provider-invitation：*** 帖子、评论、话题模块
+
   - ***service-provider-user：*** 用户模块
+
   - ***service-provider-chat：*** 聊天模块
+
   - ***service-other：*** redis/rabbitmq/七牛云/邮件 SMTP
+
+    ![image-20220702164516076](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/202207021645118.png)
 
 - #### 截图
 
