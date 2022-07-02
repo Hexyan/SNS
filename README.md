@@ -21,7 +21,7 @@
   - ***service-provider-chat：*** 聊天模块
   - ***service-other：*** redis/rabbitmq/七牛云/邮件 SMTP
 
-- #### 
+- #### 截图
 
 ![image-20220702021235787](https://fastly.jsdelivr.net/gh/Hexyan/blobimge//img/image-20220702021235787.png)
 
