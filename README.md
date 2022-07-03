@@ -46,20 +46,20 @@
 
 ![image-20220702021235787](https://fastly.jsdelivr.net/gh/Hexyan/blobimge//img/image-20220702021235787.png)
 
-<div align = "center">登录注册</div>
+登录注册
 
 ![image-20220702021341952](https://fastly.jsdelivr.net/gh/Hexyan/blobimge//img/image-20220702021341952.png)
 
-<div align = "center">主页</div>
+主页
 
 ![image-20220702021255268](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/image-20220702021255268.png)
 
-<div align = "center">聊天</div>
+聊天
 
 ![image-20220702021358588](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/image-20220702021358588.png)
 
-<div align = "center">个人主页</div>
+个人主页
 
 ![image-20220702163657935](https://fastly.jsdelivr.net/gh/Hexyan/blobimge/img/202207021636970.png)
 
-<div align = "center">后台管理</div>
+后台管理
